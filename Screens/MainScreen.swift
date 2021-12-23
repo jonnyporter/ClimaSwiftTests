@@ -17,6 +17,12 @@ class MainScreen {
     
     let tempC = "C"
     let tempF = "F"
+    
+    func searchCity(_ cityName: String) {
+        searchField.tap()
+        searchField.typeText(cityName)
+        searchButton.tap()
+    }
         
     init(app: XCUIApplication) {
         self.app = app
